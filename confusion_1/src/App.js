@@ -1,20 +1,19 @@
-
-import {Navbar,NavbarBrand} from 'reactstrap';
-import Menu from './components/MenuComponent';
 import Main from './components/MainComponent';
 import './App.css';
-import {DISHES} from './shared/dishes';
 import { Component } from 'react';
+import {HashRouter} from 'react-router-dom';
 class App extends Component{
 
 
   
   render(){
     return (
+      <HashRouter>
       <div >
     
      <Main/>
       </div>
+      </HashRouter>
     );
   }
 }
